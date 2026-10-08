@@ -1,21 +1,68 @@
-<form action="#" method="post">
-  <label for="nome">Nome</label>
-  <input type="text" id="nome" name="nome">
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contatti e sponsor - Deaf Power</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Contatti e sponsor</h1>
+  </header>
 
-  <label for="email">Email</label>
-  <input type="email" id="email" name="email">
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="giocatori.html">Giocatori</a></li>
+      <li><a href="calendario.html">Calendario</a></li>
+      <li><a href="contatti.html">Contatti</a></li>
+    </ul>
+  </nav>
 
-  <label for="data">Data preferita</label>
-  <input type="date" id="data" name="data">
+  <main>
+    <section>
+      <h2>Scrivici</h2>
+      <p>Iscrivici con noi. Forza Deaf Power!</p>
 
-  <label for="motivo">Motivo del contatto</label>
-  <select id="motivo" name="motivo">
-    <option value="sponsor">Sponsorizzazione</option>
-    <option value="info">Informazioni</option>
-  </select>
+      <form action="#" method="post">
+        <label for="nome">Nome e cognome</label>
+        <input type="text" id="nome" name="nome" required>
 
-  <label for="messaggio">Messaggio</label>
-  <textarea id="messaggio" name="messaggio" rows="4"></textarea>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
 
-  <button type="submit">Invia</button>
-</form>
+        <label for="telefono">Telefono</label>
+        <input type="tel" id="telefono" name="telefono">
+
+        <label for="motivo">Motivo del contatto</label>
+        <select id="motivo" name="motivo">
+          <option value="sponsor">Sponsorizzazione</option>
+          <option value="candidatura">Candidatura come giocatore</option>
+          <option value="marchio">Richiesta marchio</option>
+          <option value="media">Stampa e media</option>
+        </select>
+
+        <label for="messaggio">Messaggio</label>
+        <textarea id="messaggio" name="messaggio" rows="4"></textarea>
+
+        <button type="submit">Manda la richiesta</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>I nostri sponsor</h2>
+      <ul>
+        <li>ClickForge - scarpe</li>
+        <li>Zesto Energy - bevande</li>
+        <li>Urbanix Wear - abbigliamento</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2017-2026 Deaf Power - Milano - FSSI</p>
+    <p>info@deafpower.com</p>
+  </footer>
+</body>
+</html>
